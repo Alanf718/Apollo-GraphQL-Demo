@@ -1,0 +1,30 @@
+.team {
+  background-color: rgb(230, 202, 171);
+  padding: 8px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+  border: 1px solid;
+
+  .members {
+    min-height: 150px;
+    border: 1px solid;
+    padding: 8px;
+    background-color: rgb(197, 197, 197);
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+      border-radius: 2px;
+      background-color: lightblue;
+      padding: 0 10px;
+      margin: 2px;
+      border: 1px solid;
+      height: 20px;
+    }
+  }
+}
