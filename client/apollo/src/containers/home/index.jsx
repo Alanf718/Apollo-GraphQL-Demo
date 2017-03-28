@@ -26,7 +26,7 @@ export class Welcome extends Component {
 
         return (
             <div className="body">
-                <TeamView teams={team}/>
+                <TeamView teams={team} visible={peopleView.visible}/>
                 <PeopleView people={people}
                             minimize={minimize}
                             expand={expand}
@@ -67,7 +67,6 @@ export default compose(
     }),
     connect(
         (state) => state,
-        // {}
         {...PeopleViewActions, ...PersonActions}
     )
 )(Welcome);

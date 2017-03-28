@@ -13,19 +13,20 @@ export class TeamView extends Component {
     }
 
     render(){
-        const {teams=[]} = this.props;
+        const {teams=[], visible=true} = this.props;
 
         return (
             <div className="team-view">
-                <button id="moveLeft"><h1>&lt;---</h1></button>
                 {
-                    teams.map((team,i) => {
-                        return (
-                            <Team name={team.name} key={i}/>
-                        );
-                    })
+                    visible ?
+                        teams.map((team,i) => {
+                            return (
+                                <Team name={team.name} key={i}/>
+                            );
+                        })
+                        :
+                        null
                 }
-                <button id="moveLeft"><h1>---&gt;</h1></button>
             </div>
 
         );

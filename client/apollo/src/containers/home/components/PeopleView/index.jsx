@@ -20,7 +20,7 @@ export class PeopleView extends Component {
             return (
                 <div className="people-view">
                     <button id="minimize" onClick={minimize}>Minimize</button>
-                    <button id="fetch">fetch</button>
+                    {/*<button id="fetch">fetch</button>*/}
                     <button id="re-fetch" onClick={() => { refetch({}) }}>re-fetch</button>
                     {
                         people.map((person, i) => {
